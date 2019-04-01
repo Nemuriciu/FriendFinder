@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bck"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="67dp"
+        android:layout_height="64dp"
+        android:contentDescription="@string/appName"
+        app:layout_constraintBottom_toTopOf="@+id/google_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153"
+        app:srcCompat="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="none"
+        android:text="@string/app_name"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textIsSelectable="false"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/google_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appLogo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appName"
+        app:layout_constraintVertical_bias="0.708" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_button"
+        android:layout_width="240dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973" />
+
+    <Button
+        android:id="@+id/facebook_button"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:background="@drawable/com_facebook_button_background"
+        android:drawableLeft="@drawable/fb_icon"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/fb_icon"
+        android:src="@drawable/com_facebook_button_icon_blue"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label"
+        app:layout_constraintVertical_bias="0.129" />
+
+</android.support.constraint.ConstraintLayout>

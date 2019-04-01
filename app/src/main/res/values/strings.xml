@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FriendFinder</string>
+    <string name="friendfinder">FriendFinder</string>
+    <string name="or">or</string>
+    <string name="clientID">451237548151-lb0jjoh11in6dl5pgtsp6badcmgcob86.apps.googleusercontent.com</string>
+    <string name="signed_in_fmt">Signed in as: %s</string>
+    <string name="signed_out">Signed out</string>
+    <string name="appName">Friend Finder</string>
+    <string name="facebook_app_id">345134555997804</string>
+    <string name="fb_login_protocol_scheme">fb345134555997804</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_location">LocationActivity</string>
+    <string name="friends">Friends</string>
+
+    <!-- Strings related to login -->
+</resources>
